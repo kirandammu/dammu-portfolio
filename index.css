@@ -190,7 +190,7 @@ nav{
     width: 40%;
     height: 6vh;
     margin: 30px;
-    background-color: rgb(109,67, 0);
+    background: linear-gradient(to right, rgb(199, 132, 24), rgb(109,67, 0));
     color: white;
     border: none;
     outline: none;
@@ -204,7 +204,7 @@ nav{
  scale: 1.1;
  color: rgb(109,67, 0);
  border: 2px solid rgb(109,67, 0);
- background-color: transparent;
+ background: transparent;
  font-weight: 700;
  box-shadow: 0 0 40px rgb(109,67, 0);
  cursor: pointer;
@@ -253,11 +253,7 @@ nav{
     margin: 10px 8px;
     cursor: pointer;
 }
-.box{
-    width: 700px;
-    display: flex;
-    justify-content: center;
-}
+
 .container .boxs{
     width: 350px;
     height: 190px;
@@ -297,7 +293,7 @@ nav{
     scale: 1.1;
     color: rgb(255, 255, 255);
     border: 2px solid rgb(109,67, 0);
-    background-color: rgb(109,67, 0);
+    background: linear-gradient(to right, rgb(227, 150, 26), rgb(109,67, 0));
     font-weight: 700;
     box-shadow: 0 0 40px rgb(109,67, 0);
     cursor: pointer;
@@ -311,4 +307,122 @@ nav{
     box-shadow: 0 0 40px rgb(109,67, 0);
     cursor: pointer;
     
+   }
+   .about .subject{
+    display: flex;
+    align-items: center;
+    padding: 10px 8%;
+   }
+   .about .subject .pro{
+    width: 250px;
+    border-radius: 50%;
+    margin: 40px;
+    box-shadow:0 0 0.5px 1px black;
+   }
+   .pro img{
+    width: 100%;
+    border-radius: 50%;
+
+   }
+   .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .contact .title .box{
+    width: 1000px;
+    height: 360px;
+    background-color: white;
+    border-radius: 40px;
+    margin: 30px;
+    padding: 40px;
+    border: 3px solid rgb(109,67,0);
+   }
+   .projects .proj{
+    display: flex;
+    justify-content: space-between;
+    padding: 8%;
+    align-items: center;
+   }
+   .proj .self{
+    width: 600px;
+    margin: 40px;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: all 1s;
+   
+
+
+}
+.proj .self:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 3px 3px  black;
+
+}
+   .proj .self img{
+    width: 100%;
+    transition: all 0.5s;
+
+   }
+   .self img:hover{
+    transform: scale(1.08);
+    overflow: hidden;
+   }
+   .self h2{
+    padding: 10px;
+   }
+   .details .boxes .hobbies{
+    background: rgb(109,67, 0);
+    font-size: 24px;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+   }
+   .container .details .boxes{
+    width: 420px;
+    height: 140px;
+    margin:0 30px;
+    padding:0 30px;
+
+}
+   
+
+   @media (max-width:500px) {
+        .nav-container .links {
+            display: none;
+            }
+        .main-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .main-container .image{
+            width: 280px;
+
+        }
+        .image img{
+            width: 100%;
+            height: auto;
+        }
+        .content h1, .content .typewriter{
+            font-size: 30px;
+        }
+        .content .typewriter span{
+            color: rgb(109,67, 0);
+            font-size: 1.5rem;
+            text-shadow: 0 0 5px rgb(109,67, 0);
+            position: relative;
+            transition: 0.3s linear;
+        }
+        .typewriter span::after{
+            content: "";
+            position: absolute;
+            width: calc(100% + 3px);
+            height: 50%;
+            border-left: 3px solid black;
+            animation:  cursor 0.5s linear infinite;
+        }
    }
